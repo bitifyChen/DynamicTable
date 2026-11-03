@@ -327,6 +327,14 @@ import DynamicTablePlugin, {
 app.use(DynamicTablePlugin);
 ```
 
+## AI agent skill
+
+Repository 內含可由 Codex 探索的 skill：`.codex/skills/dynamic-table-vue/SKILL.md`。
+
+- 在此 repository 工作時，agent 可依 skill 的描述自動套用安裝、整合、遷移與驗證規則。
+- 需要明確指定時，可在提示中使用 `$dynamic-table-vue`。
+- 若要在其他專案使用，將整個 `dynamic-table-vue` skill 資料夾複製到該專案的 `.codex/skills`，或使用者層級的 `~/.codex/skills`。
+
 ## 舊版 key 相容
 
 新程式應使用前述簡潔 API。為協助既有畫面漸進遷移，目前仍接受：
