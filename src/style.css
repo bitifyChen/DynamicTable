@@ -1,0 +1,144 @@
+.dynamic-table {
+  display: flex;
+  min-height: 0;
+  height: 100%;
+  flex-direction: column;
+  color: var(--el-text-color-primary);
+}
+
+.dynamic-table__body {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.dt-search {
+  padding: 6px 12px;
+  border: 1px solid var(--el-border-color-lighter);
+  border-radius: 10px;
+  background: var(--el-fill-color-extra-light);
+}
+
+.dt-search-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+.dt-search-form .el-form-item {
+  margin: 0;
+}
+
+.dt-search-input {
+  width: 220px;
+}
+
+.dt-search-select,
+.dt-search-form .el-tree-select {
+  width: 180px;
+}
+
+.dt-search-slot {
+  flex: 1 1 auto;
+  min-width: 16px;
+}
+
+.dt-search-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.dt-table-wrap {
+  display: flex;
+  min-height: 0;
+  height: 100%;
+  flex-direction: column;
+  margin: 5px 0;
+  overflow: hidden;
+  background: var(--el-bg-color);
+}
+
+.dt-table-extensions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+}
+
+.dt-cell {
+  display: inline-block;
+  width: 100%;
+}
+
+.dt-expand-toggle {
+  padding: 0 8px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.dt-pagination {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+}
+
+.dt-pagination-label,
+.dt-pagination-total {
+  color: var(--el-text-color-secondary);
+  font-size: 14px;
+}
+
+.dt-pagination-slot {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.dt-pdf-help {
+  margin: 0 0 16px;
+  color: var(--el-text-color-secondary);
+  font-size: 14px;
+}
+
+.dt-pdf-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .dt-search-form {
+    align-items: stretch;
+  }
+
+  .dt-search-form .el-form-item,
+  .dt-search-input,
+  .dt-search-select,
+  .dt-search-form .el-tree-select,
+  .dt-search-form .el-date-editor {
+    width: 100%;
+  }
+
+  .dt-search-slot {
+    display: none;
+  }
+
+  .dt-search-actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .dt-pagination {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 8px;
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "@bitifychen/dynamic-table",
+  "version": "0.1.0",
+  "description": "以 Vue 3 與 Element Plus 建立的設定式動態表格元件",
+  "type": "module",
+  "files": [
+    "dist",
+    "types",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "./dist/dynamic-table.umd.cjs",
+  "module": "./dist/dynamic-table.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./dist/dynamic-table.js",
+      "require": "./dist/dynamic-table.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "vue",
+    "element-plus",
+    "table",
+    "dynamic-table"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@element-plus/icons-vue": ">=2.3.0",
+    "element-plus": ">=2.8.0",
+    "vue": ">=3.3.0",
+    "vue-router": ">=4.2.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13"
+  },
+  "devDependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/test-utils": "^2.4.6",
+    "element-plus": "^2.11.5",
+    "jsdom": "^26.1.0",
+    "vite": "^7.1.12",
+    "vitest": "^3.2.4",
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3"
+  }
+}
